@@ -1,0 +1,220 @@
+*{
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 40px;
+    background-size: cover;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(35, 35, 35);
+}
+.title{
+    color: white;
+    font-size: 35px;
+    color: gold;
+    font-family: monospace;
+    padding: 0;
+}
+.header .navbar ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    padding: 5px;
+}
+.header .navbar ul li{
+    list-style: none;
+}
+.header .navbar ul li:hover{
+    background-color: rgb(34,34,34);
+}
+.header .navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: rgb(222, 240, 255);
+}
+.header .navbar ul li a:hover{
+    color: gold;
+}
+.drop{
+    padding: 5px;
+    display: none;
+}
+.bar{
+    display: block;
+    margin: 3px;
+    height: 5px;
+    width: 35px;
+    background-color: white;
+}
+main .template{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+.template{
+    height: 500px;
+    width: 100%;
+    background-image: url("dowo.jpg");
+    background-size: cover;
+    color: white;
+    padding: 30px;
+}
+.template p{
+    font-size: 15px;
+    color: rgb(199, 199, 199);
+    line-height: 25px;
+}
+.template #btn1{
+    width: 160px;
+    font-size: 20px;
+    height: 50px;
+    background-color: orange;
+    border-radius: 5px;
+    border: none;
+    color: #ffff;
+}
+.template h1{
+    font-size: 4rem;
+    font-family: sans-serif;}
+.cards{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,340px);
+}
+.card{
+    margin: 10px;
+    height: auto;
+    width: 300px;
+    padding-bottom: 15px;
+    border:1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px rgb(133, 133, 133);
+    overflow: hidden;
+    border: none;
+}
+.card a{
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+    margin-left: 40%;
+    background-color:rgb(255, 205, 113) ;
+    width: 100%;
+    font-size: 17px;
+}
+.card img{
+    width: 100%;
+    border: 1px solid white;
+}
+.card p{
+    color: rgb(95, 95, 95);
+    font-size: 17px;
+    line-height: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.container3{
+    height: auto;
+    width: 100%;
+    padding-bottom: 15px;
+    margin: 10px;   
+}
+.container3{
+    display: flex;
+    border: 1px solid;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 25px rgb(114, 114, 114);
+}
+.image p{
+    color: rgb(71, 71, 71);
+    font-family: sans-serif;
+    line-height: 25px;
+    padding-left: 15px;
+}
+.image h1{
+    font-size: 3rem;
+    font-family: sans-serif;
+    text-align: center;
+}
+.sec4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    box-shadow: 0px 0px 15px rgb(182, 182, 182);
+    border-radius: 10px;
+    border: none;
+}
+#head5{
+    text-align: center;
+    font-size: 3rem;
+}
+label{
+    font-size: 17px;
+    text-align: right;
+}
+input{
+    width: 350px;
+    height: 40px;
+    display: block;
+    background-color: rgb(236, 236, 236);
+    margin: 10px;
+    border-radius: 5px;
+    border: none;
+}
+textarea{
+    height: 100px;
+    width: 350px;
+    display: block;
+}
+footer{
+    height: 350px;
+    width: 100%;
+    background-color: rgb(10, 10, 10);
+    border: 1px solid black;
+    border-radius: 5px;
+    bottom: 0;
+    display: block;
+    border: none;
+}
+.container2{
+    display: flex;
+    color: white;
+}
+h4{
+    color: #ffff;
+}
+.container2 li{
+    color: rgb(145, 142, 142);  
+}
+.container2 ul{
+   margin: 35px;
+   list-style: none;
+   font-size: 20px;
+}
+footer p{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-color: rgb(255, 157, 0);
+  font-weight: lighter;
+  height: 50px;
+  line-height: 25px;
+}
+
+@media (max-width:400px){   
+    .header .navbar ul{
+        display: flex;
+        flex-direction: column;
+        background-color:  rgb(35, 35, 35);
+        display: none;
+    }
+    .drop{
+        display: block;
+    }
+    .drop:hover .header .navbar ul{
+        display: block;
+    }
+}
